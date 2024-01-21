@@ -17,6 +17,10 @@ const router = createBrowserRouter([
     element: <Home></Home>,
     children:[
       {
+            path: "/",
+            element: <App></App>,
+      },
+      {
         path: "about",
         element: <About></About>,
       },
@@ -30,10 +34,7 @@ const router = createBrowserRouter([
 ]);
 
 // const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <App></App>,
-//   },
+//  
 //   {
 //     path: "/about",
 //     element: <About></About>,
