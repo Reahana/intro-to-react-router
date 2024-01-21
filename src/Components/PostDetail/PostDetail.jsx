@@ -8,7 +8,8 @@ const PostDetail = () => {
     return (
         <div>
           <h2>{post.title}</h2>
-            <h3>{post. body}</h3>
+            <p>{post.body}</p>
+            <h4>author:{post.userId}</h4>
         </div>
     );
 };
