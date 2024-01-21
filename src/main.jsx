@@ -31,6 +31,7 @@ const router = createBrowserRouter([
   {
     path: "friend/:friendId",
     element: <FriendDetail></FriendDetail>,
+    loader:({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.friendId}`)
 },
       {
         path: "about",
